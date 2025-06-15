@@ -1,18 +1,24 @@
 import { useSelector } from 'react-redux';
-import Contact from '../Contact/Contact';
 import styles from './ContactList.module.css';
-import { selectFilteredContacts } from '../../redux/contactsSlice';
+import { selectFilteredContacts } from '../../redux/contacts/selectors';
+import Contact from '../Contact/Contact';
+import { selectIsOpenMenu } from '../../redux/contactsMenu/selectors';
+import clsx from 'clsx';
 
-export default function ContactList() {
+export default function ContactList({ typePage }) {
   const visibilityContacts = useSelector(selectFilteredContacts);
-
+  const menuIsOpen = useSelector(selectIsOpenMenu);
+  const activeClass = clsx(
+    styles.contactsContainer,
+    typePage !== 'editPage' && menuIsOpen && styles.menuOpen,
+  );
   return (
-    <div className={styles.contactsContainer}>
-      {visibilityContacts.length === 0 ? (
-        <p>No contacts found</p>
+    <div className={activeClass}>
+      {typePage !== 'editPage' && visibilityContacts.length === 0 ? (
+        <p className={styles.firstContactNotify}>Add your first contact</p>
       ) : (
         visibilityContacts.map((number) => (
-          <Contact key={number.id} numberInfo={number} />
+          <Contact typePage={typePage} key={number.id} numberInfo={number} />
         ))
       )}
     </div>

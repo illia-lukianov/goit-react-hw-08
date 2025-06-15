@@ -1,0 +1,61 @@
+.contactWrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.contact {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.contact:hover {
+  width: calc(100% - 200px);
+}
+
+.contact:hover .deleteButton {
+  opacity: 1;
+}
+
+.contactInfo {
+  font-size: x-large;
+  position: relative;
+}
+
+.contactText {
+  margin: 0;
+  padding-left: 35px;
+}
+
+.contactIcon {
+  position: absolute;
+  top: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.contactNumberIcon {
+  top: 63px;
+}
+
+.deleteButton {
+  height: 147.19px;
+  box-sizing: content-box;
+  width: 250px;
+  font-size: x-large;
+  background-color: transparent;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  border: 2px solid black;
+  border-radius: 30px;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}

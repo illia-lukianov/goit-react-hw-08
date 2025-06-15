@@ -1,0 +1,39 @@
+.burgerMenu {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 23px;
+  left: 30px;
+}
+
+.menuIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.galleryIsOpen {
+  margin-right: 40px;
+}
+
+.viewIconWraper {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.searchIconWraper {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: #36d8f5;
+  border: 1px solid black;z-index: 1;
+}

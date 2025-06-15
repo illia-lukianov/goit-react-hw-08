@@ -1,0 +1,11 @@
+.galleryViewIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.galleryViewBtn {
+  background-color: transparent;
+  border: none;
+  padding: 3px;
+}

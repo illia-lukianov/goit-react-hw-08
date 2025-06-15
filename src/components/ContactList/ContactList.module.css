@@ -1,7 +1,42 @@
+.firstContactNotify {
+  position: absolute;
+  top: 5px;
+  font-size: x-large;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
 .contactsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  max-height: 100%;
+  gap: 15px;
+  padding: 60px;
+  overflow-y: auto;
+}
+
+.menuOpen {
+  padding-left: 300px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #20adc6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #20adc6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

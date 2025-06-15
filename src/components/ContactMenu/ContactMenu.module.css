@@ -1,0 +1,106 @@
+.container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.exitIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.exitBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #20adc6;
+  padding: 10px;
+  padding-top: 45px;
+  border-radius: 25px;
+  background-color: grey;
+}
+
+.menuBtn {
+  width: 257px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #20adc6;
+  font-size: large;
+  border: 2px solid black;
+}
+
+.menuList:first-child {
+  margin-bottom: 10px;
+
+}
+
+.activeMenuBtn {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: none;
+}
+
+.formWrapper {
+  background-color: #20adc6;
+  border-radius: 20px;
+  border: 2px solid black;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top: none;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.label {
+  font-size: large;
+}
+
+.input {
+  border-radius: 20px;
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.validationMsg {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  max-width: 200px;
+}
+
+.submitBtn {
+  display: flex;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}

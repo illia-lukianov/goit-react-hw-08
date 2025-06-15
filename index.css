@@ -1,24 +1,10 @@
-input {
-    border-radius: 7px;
-    border: 1px solid lightgrey;
-    padding: 5px;
-    outline: none;
-    box-sizing: content-box;
-}
-
-input:hover,
-input:focus {
-    border: 2px solid grey;
-}
-
 body {
     background-color: rgb(61, 61, 61);
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: italic;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    place-items: center;
 }
