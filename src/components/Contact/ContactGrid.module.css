@@ -24,11 +24,6 @@
     margin-top: 0px;
 }
 
-.contactWrapper:hover .contact {
-    height: 200px;
-    padding-bottom: 75px;
-}
-
 .contactInfo {
     margin-top: 50px;
     font-size: x-large;
@@ -37,7 +32,6 @@
 
 .contactText {
     padding-left: 35px;
-    margin: 0;
 }
 
 .contactIcon {

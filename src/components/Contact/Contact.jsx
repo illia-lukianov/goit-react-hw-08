@@ -16,9 +16,11 @@ export default function Contact({ numberInfo: { name, number, id } }) {
     <div className={activeStyle.contactWrapper}>
       <div className={activeStyle.contact}>
         <div className={activeStyle.contactInfo}>
-          <IoIosContact className={activeStyle.contactNameIcon} />
+          <IoIosContact className={activeStyle.contactIcon} />
           <p className={activeStyle.contactText}>{name}</p>
-          <PiPhoneCallBold className={activeStyle.contactNumberIcon} />
+          <PiPhoneCallBold
+            className={`${activeStyle.contactIcon} ${activeStyle.contactNumberIcon}`}
+          />
           <p className={activeStyle.contactText}>{number}</p>
         </div>
         <button
