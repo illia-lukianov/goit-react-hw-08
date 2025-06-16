@@ -5,7 +5,7 @@ import { IoIosCloseCircleOutline, IoIosContact } from 'react-icons/io';
 import { PiPhoneCallBold } from 'react-icons/pi';
 import { MdOutlineEdit } from 'react-icons/md';
 import { useState } from 'react';
-import { Field, Form, Formik } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { patchContact } from '../../redux/contacts/operations';
 
@@ -59,8 +59,11 @@ export default function ModalForEditPage({
       <Formik
         onSubmit={(values) => {
           const result = { ...values, id };
-          console.log(result);
+          console.log(1);
           dispatch(patchContact(result));
+          setEditNameMode(false);
+          setEditNumberMode(false);
+          closeModal();
         }}
         initialValues={{
           name,
@@ -68,9 +71,13 @@ export default function ModalForEditPage({
         }}
       >
         {({ values }) => (
-          <Form>
-            <Container>
-              <button className={styles.exitBtn} onClick={closeModal}>
+          <Container>
+            <Form>
+              <button
+                type="button"
+                className={styles.exitBtn}
+                onClick={closeModal}
+              >
                 <IoIosCloseCircleOutline className={styles.exitIcon} />
               </button>
               <div className={styles.contactWrapper}>
@@ -81,7 +88,14 @@ export default function ModalForEditPage({
                       {!editModeName ? (
                         <p className={styles.contactText}>{values.name}</p>
                       ) : (
-                        <Field name="name" className={styles.formInput} />
+                        <>
+                          <Field name="name" className={styles.formInput} />
+                          <ErrorMessage
+                            name="name"
+                            component="span"
+                            className={styles.validationMsg}
+                          />
+                        </>
                       )}
                       {!editModeName ? (
                         <MdOutlineEdit
@@ -100,7 +114,14 @@ export default function ModalForEditPage({
                       {!editNumberMode ? (
                         <p className={styles.contactText}>{values.phone}</p>
                       ) : (
-                        <Field name="phone" className={styles.formInput} />
+                        <>
+                          <Field name="phone" className={styles.formInput} />
+                          <ErrorMessage
+                            name="phone"
+                            component="span"
+                            className={styles.validationMsg}
+                          />
+                        </>
                       )}
                       {!editNumberMode ? (
                         <MdOutlineEdit
@@ -120,8 +141,8 @@ export default function ModalForEditPage({
                   Submit
                 </button>
               </div>
-            </Container>
-          </Form>
+            </Form>
+          </Container>
         )}
       </Formik>
     </Modal>

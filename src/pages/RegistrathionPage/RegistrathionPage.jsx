@@ -6,6 +6,7 @@ import Container from '../../components/Container/Container';
 import { Field, Formik, Form, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
 import { signUp } from '../../redux/auth/operations';
+import { registerValidation } from './registerValidation';
 
 export default function RegistrathionPage() {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ export default function RegistrathionPage() {
             onSubmit={(values) => {
               dispatch(signUp(values));
             }}
+            validationSchema={registerValidation}
           >
             <Form className={styles.form}>
               <label htmlFor="name" className={styles.label}>

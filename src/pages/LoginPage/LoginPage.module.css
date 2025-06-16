@@ -54,3 +54,10 @@
   height: 400px;
   border: 2px solid black;
 }
+
+.validationMsg {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  max-width: 200px;
+}

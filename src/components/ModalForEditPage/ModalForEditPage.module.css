@@ -84,6 +84,12 @@
   padding-left: 15px;
 }
 
+.validationMsg {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+}
+
 .deleteButton {
   position: absolute;
   width: 1px;
