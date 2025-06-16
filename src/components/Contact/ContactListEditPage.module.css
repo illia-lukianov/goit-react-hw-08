@@ -1,0 +1,54 @@
+.contactWrapper {
+    position: relative;
+    width: 100%;
+    width: 4009px;
+}
+
+.contact {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.contact:hover {
+    box-shadow:
+        0 0 8px white,
+        0 0 16px white,
+        0 0 24px white;
+}
+
+.contactInfo {
+    font-size: x-large;
+    position: relative;
+}
+
+.contactText {
+    padding-left: 35px;
+}
+
+.contactIcon {
+    position: absolute;
+    top: 0px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+.contactNumberIcon {
+    top: 53px;
+}
+
+.deleteButton {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}    
