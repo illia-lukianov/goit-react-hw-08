@@ -6,7 +6,9 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import 'modern-normalize';
 import { PersistGate } from 'redux-persist/integration/react';
+import Modal from 'react-modal';
 
+Modal.setAppElement('#root');
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

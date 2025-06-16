@@ -1,0 +1,111 @@
+.exitIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.exitBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.contactWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.contact {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  width: 650px;
+  margin-right: 40px;
+  border-bottom-left-radius: 0;
+}
+
+.contactInfo {
+  font-size: x-large;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactText {
+  padding-left: 35px;
+  margin: 0;
+}
+
+.contactIcon {
+  position: absolute;
+  top: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.contactEditWrapper {
+  position: relative;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.contactEditIcon {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.exitEditMode {
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  width: 35px;
+  height: 35px;
+}
+
+.formInput {
+  width: 400px;
+  margin-left: 40px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.deleteButton {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.submitBtn {
+  background-color: #36d8f5;
+  border: 2px solid black;
+  border-top: none;
+  position: relative;
+  top: -3px;
+  width: 200px;
+  height: 30px;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

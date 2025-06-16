@@ -7,6 +7,9 @@ import { IoIosContact } from 'react-icons/io';
 import { PiPhoneCallBold } from 'react-icons/pi';
 import { deleteContact } from '../../redux/contacts/operations';
 import { selectGalleryView } from '../../redux/galleryViewSelect/selectors';
+import Modal from 'react-modal';
+import { useState } from 'react';
+import ModalForEditPage from '../ModalForEditPage/ModalForEditPage';
 
 export default function Contact({
   typePage,
@@ -25,16 +28,19 @@ export default function Contact({
       ? ListStyle
       : GridStyle;
 
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  // ? (event) => console.log(event.currentTarget.id)
   return (
     <div className={activeStyle.contactWrapper}>
       <div
         className={activeStyle.contact}
         id={id}
-        onClick={
-          typePage === 'editPage'
-            ? (event) => console.log(event.currentTarget.id)
-            : undefined
-        }
+        onClick={typePage === 'editPage' ? openModal : undefined}
       >
         <div className={activeStyle.contactInfo}>
           <IoIosContact className={activeStyle.contactIcon} />
@@ -51,6 +57,15 @@ export default function Contact({
           Delete
         </button>
       </div>
+      {typePage === 'editPage' && (
+        <ModalForEditPage
+          modalIsOpen={modalIsOpen}
+          setIsOpen={setIsOpen}
+          name={name}
+          number={number}
+          id={id}
+        />
+      )}
     </div>
   );
 }

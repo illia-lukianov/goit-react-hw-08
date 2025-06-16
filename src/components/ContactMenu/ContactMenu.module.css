@@ -36,6 +36,9 @@
   background-color: #20adc6;
   font-size: large;
   border: 2px solid black;
+  font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .menuList:first-child {

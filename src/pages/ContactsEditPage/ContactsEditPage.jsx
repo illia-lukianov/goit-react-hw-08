@@ -8,6 +8,7 @@ import clsx from 'clsx';
 import SearchBox from '../../components/SearchBox/SearchBox';
 import ContactList from '../../components/ContactList/ContactList';
 import GalleryViewSelect from '../../components/GalleryViewSelect/GalleryViewSelect';
+import { Link } from 'react-router-dom';
 
 export default function ContactsEditPage() {
   const galleryMenuIsOpen = useSelector(selectIsGalleryOpen);
@@ -24,6 +25,11 @@ export default function ContactsEditPage() {
         stylePage={{ width: '90vw', height: '80vh' }}
         styleWrapper={{ width: '100%', height: '100%' }}
       >
+        <div className={styles.backBtnWrapper}>
+          <Link to={'/contacts'} className={styles.backBtn}>
+            Back to Contacts
+          </Link>
+        </div>
         <div className={`${styles.searchIconWraper} ${activeStyleSearchBox}`}>
           <SearchBox />
         </div>
