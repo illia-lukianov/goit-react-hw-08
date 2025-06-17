@@ -1,6 +1,6 @@
 import ParticlesComponent from '../../components/ParticlesComponent/ParticlesComponent';
 import styles from '../HomePage/HomePage.module.css';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import AppBar from '../../components/AppBar/AppBar';
 import mainImage from '../../images/HomePage/MainPage.webp';
 import Container from '../../components/Container/Container';
 import { TypeAnimation } from 'react-type-animation';
@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <ParticlesComponent />
-      <NavigationBar />
+      <AppBar />
       <Container>
         <p className={styles.informationText}>
           Hi dear user this is one centralised place for{' '}

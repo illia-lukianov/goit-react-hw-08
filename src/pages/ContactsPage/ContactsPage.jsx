@@ -1,5 +1,5 @@
 import Container from '../../components/Container/Container';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import AppBar from '../../components/AppBar/AppBar';
 import ParticlesComponent from '../../components/ParticlesComponent/ParticlesComponent';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import ContactList from '../../components/ContactList/ContactList';
@@ -31,7 +31,7 @@ export default function ContactsPage() {
   return (
     <>
       <ParticlesComponent />
-      <NavigationBar />
+      <AppBar />
       <Container
         stylePage={{ width: '90vw', height: '80vh' }}
         styleWrapper={{ width: '100%', height: '100%' }}

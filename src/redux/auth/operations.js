@@ -3,8 +3,9 @@ import axios from 'axios';
 
 axios.defaults.baseURL = 'https://connections-api.goit.global/';
 
-const setAuthorizationHeader = (value) =>
-  (axios.defaults.headers.common.Authorization = value);
+const setAuthorizationHeader = (value) => {
+  axios.defaults.headers.common.Authorization = value;
+};
 
 export const signUp = createAsyncThunk(
   'auth/register',

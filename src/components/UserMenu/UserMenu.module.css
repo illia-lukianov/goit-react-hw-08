@@ -1,0 +1,19 @@
+.welcomedNotifyWrapper {
+  margin-left: auto;
+  display: flex;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomedNotify {
+  margin: 0;
+}
+
+.logOutBtn {
+  background-color: #36d8f5;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-size: large;
+}

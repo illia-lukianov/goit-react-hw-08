@@ -1,7 +1,7 @@
 import styles from './RegistrathionPage.module.css';
 import mainIcon from '../../images/RegisterPage/Register.png';
 import ParticlesComponent from '../../components/ParticlesComponent/ParticlesComponent';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container/Container';
 import { Field, Formik, Form, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
@@ -13,7 +13,7 @@ export default function RegistrathionPage() {
   return (
     <>
       <ParticlesComponent />
-      <NavigationBar />
+      <AppBar />
       <Container>
         <div className={styles.formWrapper}>
           <p className={styles.title}>Registration form</p>

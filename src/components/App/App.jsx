@@ -24,6 +24,7 @@ const NotFoundPage = lazy(() =>
 export default function App() {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectRefreshing);
+
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);

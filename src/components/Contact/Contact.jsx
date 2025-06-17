@@ -7,7 +7,6 @@ import { IoIosContact } from 'react-icons/io';
 import { PiPhoneCallBold } from 'react-icons/pi';
 import { deleteContact } from '../../redux/contacts/operations';
 import { selectGalleryView } from '../../redux/galleryViewSelect/selectors';
-import Modal from 'react-modal';
 import { useState } from 'react';
 import ModalForEditPage from '../ModalForEditPage/ModalForEditPage';
 
@@ -34,7 +33,6 @@ export default function Contact({
     setIsOpen(true);
   }
 
-  // ? (event) => console.log(event.currentTarget.id)
   return (
     <div className={activeStyle.contactWrapper}>
       <div

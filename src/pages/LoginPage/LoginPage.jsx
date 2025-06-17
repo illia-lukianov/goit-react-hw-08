@@ -1,6 +1,6 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import Container from '../../components/Container/Container';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import AppBar from '../../components/AppBar/AppBar';
 import ParticlesComponent from '../../components/ParticlesComponent/ParticlesComponent';
 import styles from './LoginPage.module.css';
 import mainIcon from '../../images/LoginPage/Login.png';
@@ -13,7 +13,7 @@ export default function LoginPage() {
   return (
     <>
       <ParticlesComponent />
-      <NavigationBar />
+      <AppBar />
       <Container>
         <div className={styles.formWrapper}>
           <p className={styles.title}>Login form</p>

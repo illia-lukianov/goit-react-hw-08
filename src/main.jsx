@@ -9,14 +9,15 @@ import { PersistGate } from 'redux-persist/integration/react';
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <PersistGate loading={null} persistor={persistor}>
-        <Provider store={store}>
+    <Provider store={store}>
+      <BrowserRouter>
+        <PersistGate loading={null} persistor={persistor}>
           <App />
-        </Provider>
-      </PersistGate>
-    </BrowserRouter>
+        </PersistGate>
+      </BrowserRouter>
+    </Provider>
   </StrictMode>,
 );

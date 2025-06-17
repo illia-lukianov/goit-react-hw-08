@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import Container from '../../components/Container/Container';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import AppBar from '../../components/AppBar/AppBar';
 import ParticlesComponent from '../../components/ParticlesComponent/ParticlesComponent';
 import styles from './ContactsEditPage.module.css';
 import { selectIsGalleryOpen } from '../../redux/galleryViewSelect/selectors';
@@ -20,7 +20,7 @@ export default function ContactsEditPage() {
   return (
     <>
       <ParticlesComponent />
-      <NavigationBar />
+      <AppBar />
       <Container
         stylePage={{ width: '90vw', height: '80vh' }}
         styleWrapper={{ width: '100%', height: '100%' }}
